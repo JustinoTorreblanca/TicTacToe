@@ -1,0 +1,111 @@
+.app{
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    @media (min-width: 1152px){
+      flex-direction: column;
+      max-width: 1440px;
+    }
+  }
+}
+.first{
+  &__tittle{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    width: 240px;
+    margin: 0 auto;
+    @media(min-width: 768px){
+      width: 513px;
+      margin: 21px auto;
+    }
+    @media (min-width: 1152px){
+      font-size: 3.5rem;
+      width:942px;
+      margin: 25px auto;
+      max-width: 950px;
+    }
+  }
+}
+
+.btn-reset{
+  border: none;
+  border-radius: 5px;
+  background-color: tan;
+  color: darkslateblue;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 2.5rem auto 1rem;
+  @media (min-width: 1152px){
+    width: 10rem;
+    font-size: 1.3rem;
+  }
+
+}
+.btn-reset:hover{
+  transition: opacity ease-in 1s;
+  cursor: pointer;
+  color: darkslategray;
+  background-color: lightslategrey;
+}
+.players{
+  &__container{
+    width: 130px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    @media (min-width: 1152px){
+      font-size: 2rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      width: 290px;
+      .border{
+        border-right-style: none;
+        border-right-color: none;
+        border-top-style: inset;
+        border-top-color: salmon;
+        border-bottom-style: none;
+      }
+    }
+  }
+}
+.border{
+  border-right-style: inset;
+  border-right-color: salmon;
+  border-bottom-style: inset;
+  border-block-color: salmon;
+}
+
+.game{
+  &__container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    width: 260px;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+    @media(min-width: 1152px){
+      width: 290px;
+      height: 275px;
+    }
+  }
+}
+.game__container >.box{
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  border: 2px solid gray;
+  height: 5.5rem;
+  &:hover{
+    transition: opacity ease-in-out 1s;
+    background-color: darkkhaki;
+  }
+}
