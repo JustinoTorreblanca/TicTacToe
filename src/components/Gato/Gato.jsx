@@ -31,9 +31,8 @@ const Gato = () => {
       board.map((val, idx) => {
         if (idx === square && val === "") {
           return player;
-        } else {
-          return val;
         }
+          return val;
       })
     );
   };
@@ -72,7 +71,7 @@ const Gato = () => {
 
   return (
     <div className="app__wrapper">
-      <h1 className="first__tittle">Welcome to my Tic-tac-toe!</h1>
+      <h1 className="first__tittle">Welcome to my Tic Tac Toe!</h1>
       <div className="players__container">
         <span className={player === "X" ? "border" : null}>Player X</span>
         <span className={player === "O" ? "border" : null}>Player O</span>

@@ -4,10 +4,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 30px 20px;
+    background-color: #5e519c;
+    @media(min-width: 768px) {
+      height: 100vh;
+    }
     @media (min-width: 1152px){
       flex-direction: column;
-      max-width: 1440px;
+      height: 100vh;
     }
   }
 }
@@ -15,7 +20,7 @@
   &__tittle{
     font-size: 2rem;
     text-align: center;
-    color: black;
+    color: #cfccde;
     width: 240px;
     margin: 0 auto;
     @media(min-width: 768px){
@@ -61,6 +66,7 @@
     grid-template-rows: 1fr 1fr;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    color: #5c1b14;
     @media (min-width: 1152px){
       font-size: 2rem;
       grid-template-columns: 1fr 1fr;
@@ -76,11 +82,13 @@
     }
   }
 }
+
 .border{
   border-right-style: inset;
   border-right-color: salmon;
   border-bottom-style: inset;
   border-block-color: salmon;
+  color: #c46358;
 }
 
 .game{
@@ -92,6 +100,7 @@
     height: 260px;
     justify-content: center;
     align-items: center;
+
     @media(min-width: 1152px){
       width: 290px;
       height: 275px;
@@ -104,6 +113,13 @@
   font-size: 4rem;
   border: 2px solid gray;
   height: 5.5rem;
+  cursor: pointer;
+  &.X{
+    color: black;
+  }
+  &.O{
+    color: red;
+  }
   &:hover{
     transition: opacity ease-in-out 1s;
     background-color: darkkhaki;
