@@ -32,7 +32,7 @@ const Gato = () => {
         if (idx === square && val === "") {
           return player;
         }
-          return val;
+        return val;
       })
     );
   };
